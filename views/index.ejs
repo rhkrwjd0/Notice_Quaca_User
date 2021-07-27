@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>매장알림</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>메뉴완료 -> 사용자알림 (A5로 보냄)</h1>
+    <form action="/RCsend" method="POST">
+      <h3>UserPayId(주문번호) - 접수알림</h3>
+      <input type="text" name="UserPayId" placeholder="UserPayId" />
+      <input type="text" name="time" placeholder="time" />
+      <input type="submit" value="접수알림보내기!" />
+      <p>
+        UserPayId: 210310-imp_845546083251 / time: 아무글씨나
+        넣어도됨(5분후/10분후 그런거할라고..)
+      </p>
+    </form>
+    <p>&nbsp;</p>
+    <form action="/PCsend" method="POST">
+      <h3>UserPayId(주문번호) - 제조완료알림</h3>
+      <input type="text" name="UserPayId" placeholder="UserPayId" />
+      <input type="submit" value="제조완료알림보내기!" />
+      <p>UserPayId: 210714-imp_767774882613</p>
+    </form>
+  </body>
+</html>
